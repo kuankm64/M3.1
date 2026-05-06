@@ -3,8 +3,6 @@ name: Terraform Destroy
 on:
   workflow_dispatch: # This enables the manual trigger button
 
-env:           
-  AWS_REGION: ap-southeast-1
 
 jobs:
   Terraform-Destroy:
@@ -28,4 +26,4 @@ jobs:
       run: terraform init
 
     - name: Terraform Destroy
-      run: terraform destroy -auto-approve
+      run: terraform destroy --auto-approve
