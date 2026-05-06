@@ -10,7 +10,6 @@ provider "aws" {
   region = "ap-southeast-1"
 }
 
-#resource "aws_s3_bucket" "bucket1" {
-#  bucket_prefix = "my-aws-s3-kuankm-"
-# force_destroy = true
-#}
+resource "aws_s3_bucket" "bucket1" {
+  bucket_prefix = "kuankm-tfstate-data-" 
+}
